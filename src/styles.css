@@ -1,5 +1,13 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+:root {
+  --white-smoke: #f4fbf5;
+  --black-russian: #24252c;
 
+  /* Text */
+  --off-black: #333333;
+  --white: #FFFFFF;
+}
 *,
 *::before,
 *::after {
@@ -11,6 +19,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: "Karla", sans-serif;
 }
 
 img,
@@ -27,9 +36,9 @@ button,
 textarea,
 select {
   font: inherit;
+  font-family: "Karla", sans-serif;
 }
 
-p,
 h1,
 h2,
 h3,
@@ -37,6 +46,7 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  font-family: "Frank Ruhl Libre", serif;
 }
 
 p {
@@ -57,7 +67,9 @@ header {
 }
 
 .logo--text {
+    font-family: "Frank Ruhl Libre", serif;
     font-size: 3rem;
+    color: var(--white-smoke);
 }
 
 .hamburger--menu {
@@ -93,7 +105,7 @@ header {
 
 .hero-section {
     height: 100vh;
-    background-image: url(./assets/food-2.jpg);
+    background-image: url(./assets/food-1.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -107,6 +119,48 @@ button {
     text-transform: uppercase;
     cursor: pointer;
     color: #FFF;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.hero__btn__container {
+  box-shadow: 1px 1px 20px 2px var(--black-russian);
+  border: 3px solid var(--white);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15px;
+}
+
+.hero__content {
+  text-align: center;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.separator {
+  height: 1px;
+  width: 100px;
+  margin: 2rem;
+  border: 2px solid var(--white);
+}
+
+.hero__title {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.hero__paragraph {
+  font-size: 1.65rem;
+  text-transform: uppercase;
 }
 
 @media (min-width: 767px) {
