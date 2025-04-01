@@ -1,6 +1,7 @@
 // Menu page
 import loadMenuHeader from "../components/MenuHeader";
 import loadMenuList from "../components/MenuList";
+import loadCarousel from "../components/MenuCarousel";
 
 export default function loadMenu() {
   const content = document.getElementById("content");
@@ -13,4 +14,7 @@ export default function loadMenu() {
 
   content.appendChild(menuSection);
   content.appendChild(loadMenuList());
+  content.appendChild(loadCarousel());
+
+  return content;  
 }

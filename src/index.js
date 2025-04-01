@@ -5,34 +5,31 @@ import loadMenu from "./pages/menu.js";
 import { hello } from "./test.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    loadMenu();
+  loadMenu();
+
+  const images = document.querySelectorAll(".carousel-inner img");
+  const prevButton = document.querySelector(".prev");
+  const nextButton = document.querySelector(".next");
+
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    images.forEach((img, index) => {
+      img.classList.toggle("active", index === currentIndex);
+    });
+  }
+
+  prevButton.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateCarousel();
+  });
+
+  nextButton.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateCarousel();
+  });
+
+  updateCarousel();
 });
 
-
 console.log(hello);
-
-
-//   carousel implementation, here for testing puposes only will modulate it later
-// const images = document.querySelectorAll(".carousel-inner img");
-// const prevButton = document.querySelector(".prev");
-// const nextButton = document.querySelector(".next");
-
-// let currentIndex = 0;
-
-// function updateCarousel() {
-//   images.forEach((img, index) => {
-//     img.classList.toggle("active", index === currentIndex);
-//   });
-// }
-
-// prevButton.addEventListener("click", () => {
-//   currentIndex = (currentIndex - 1 + images.length) % images.length;
-//   updateCarousel();
-// });
-
-// nextButton.addEventListener("click", () => {
-//   currentIndex = (currentIndex + 1) % images.length;
-//   updateCarousel();
-// });
-
-// updateCarousel();
