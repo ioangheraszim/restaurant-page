@@ -1,66 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Restaurant Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="nav__container">
-            <div class="logo__container">
-                <p class="logo--text">M.</p>
-            </div>
-            <div class="home--buttons">
-                <button id="home">Menu</button>
-                <button id="menu">About</button>
-                <button id="functions">Functions</button>
-                <button id="news">News</button>
-                <button id="reservations">Reservations</button>
-            </div>
-            <div class="hamburger--menu">
-                <button><i class="fa-solid fa-bars"></i></button>
-            </div>
-        </nav>
+      <nav class="nav__container">
+        <div class="logo__container">
+          <p class="logo--text">M.</p>
+        </div>
+        <div class="home--buttons">
+          <button id="home">Menu</button>
+          <button id="menu">About</button>
+          <button id="functions">Functions</button>
+          <button id="news">News</button>
+          <button id="reservations">Reservations</button>
+        </div>
+        <div class="hamburger--menu">
+          <button><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </nav>
     </header>
     <div id="content">
+      <section class="container menu-section">
+        <div class="menu-card__container">
+          <div class="menu__content">
+            <h5 class="menu-card__title">MADE FROM SCRATCH</h5>
+            <div class="separator separator--black"></div>
+            <p class="menu-card__paragraph">
+              The Miller menu is a celebration of the historic Mornington
+              coastal region and its abundance of vibrant local producers.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="container menu">
+        <div class="menu__container">
+          <div class="menu__header">
+            <p class="menu__title">FIRST</p>
+            <p class="menu__subtitle">SMALL PIECES, IDEAL FOR SHARING</p>
+          </div>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <p class="menu__dish">
+                Oyster – shaved scallop, sea herbs, lemon (GF)
+              </p>
+              <p class="menu__price">4.5</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__dish">
+                Mill house bread – smoked cultured butter (V)
+              </p>
+              <p class="menu__price">5</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__dish">
+                7 spiced pepita seeds – orange, garlic, capsicum, pork (GF)
+              </p>
+              <p class="menu__price">5</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__dish">
+                Tasmanian salmon – ginger, kaffir, finger lime, grape (GF)
+              </p>
+              <p class="menu__price">5</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__dish">
+                Chicken liver pate – spiced bread, crackling
+              </p>
+              <p class="menu__price">8</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__dish">
+                Scallop cannelloni – nettle, bower spinach, katsuobushi
+              </p>
+              <p class="menu__price">9</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__dish">
+                Kangaroo tartare – green olive, miso, flax cracker (GF)
+              </p>
+              <p class="menu__price">12</p>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__container">
+          <div class="menu__header">
+            <p class="menu__title">MAIN</p>
+            <p class="menu__subtitle">LARGER SINGLE-SERVE DISHES</p>
+          </div>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <p class="menu__dish">
+                Arcadia Lamb - cucumber, lemon, honey, sake (GF)
+              </p>
+              <p class="menu__price">4.5</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__dish">
+                Roasted duck - pickled turnip, black garlic, slow-cooked grains
+              </p>
+              <p class="menu__price">5</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__dish">
+                Smoked Abalone - pearl oyster, heart of palm, black vinegar (GF)
+              </p>
+              <p class="menu__price">5</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__dish">
+                Pickled Quail - walnut crackling, cured seaweed, star anise
+              </p>
+              <p class="menu__price">5</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__dish">
+                Confit Salmon - shiitake, grains, horseradish emulsion
+              </p>
+              <p class="menu__price">8</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__dish">
+                Slow Cooked Cod - eggplant, hazelnut, juniper berry (GF)
+              </p>
+              <p class="menu__price">9</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__dish">
+                Pickled Mussels– nettle, bower spinach, katsuobushi
+              </p>
+              <p class="menu__price">12</p>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__container">
+          <div class="menu__header">
+            <p class="menu__title">DESSERT</p>
+            <p class="menu__subtitle">SMALL SERVINGS, IDEAL FOR SHARING</p>
+          </div>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <p class="menu__dish">
+                Lychee tart – filtered créme fràiche, blueberries (V)
+              </p>
+              <p class="menu__price">12</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__dish">
+                Caramel cheesecake – apple leaves, ginger (V)
+              </p>
+              <p class="menu__price">5</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__dish">
+                Sweet potato ice cream – shaved pear, cacao (V) (GF)
+              </p>
+              <p class="menu__price">5</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__dish">
+                Pickled Quail - walnut crackling, cured seaweed, star anise
+              </p>
+              <p class="menu__price">5</p>
+            </li>
+            <li class="menu__item">
+              <p class="menu__dish">
+                Chocolate friand – quince paste, ginger root (V)
+              </p>
+              <p class="menu__price">8</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="carousel-section">
+        <div class="container carousel-container">
+          <div class="carousel">
+            <button class="prev"><i class="fa-solid fa-circle-arrow-left"></i></button>
+            <div class="carousel-inner">
+              <img src="./assets/carousel-1.jpg" alt="Image 1" class="active" />
+              <img src="./assets/carousel-2.jpg" alt="Image 2" />
+              <img src="./assets/carousel-3.jpg" alt="Image 3" />
+            </div>
+            <button class="next"><i class="fa-solid fa-circle-arrow-right"></i></button>
+          </div>
+        </div>
+      </section>
     </div>
     <footer class="footer">
-        <div class="footer__container">
-            <div class="logo__container">
-                <p class="logo--text">M.</p>
-            </div>
-            <div class="list__container">
-                <ul class="info-list info-list--location">
-                    <li class="info-list__title">Location</li>
-                    <li class="info-list__item">14 Paramore Street</li>
-                    <li class="info-list__item">Mornington Peninsula</li>
-                    <li class="info-list__item">Victoria 3552</li>
-                </ul>
-                <ul class="info-list info-list--contact">
-                    <li class="info-list__title">Contact</li>
-                    <li class="info-list__item">P: (03) 9283 4726</li>
-                    <li class="info-list__item">E: <a href="mailto:enquiries@mill.co" class="info-list__link">enquiries@mill.co</a></li>
-                </ul>
-                <ul class="info-list info-list--hours">
-                    <li class="info-list__title">Opening Hours</li>
-                    <li class="info-list__item">Wed — Sat, 12-3pm | 6pm-late</li>
-                    <li class="info-list__item">Sun, 12 noon til 3pm</li>
-                    <li class="info-list__item">Mon — Tues, closed</li>
-                </ul>
-                <ul class="info-list info-list--social">
-                    <li class="info-list__title">Social</li>
-                    <ul class="social__list">
-                        <li class="info-list__item"><i class="fa-brands fa-instagram"></i></li>
-                        <li class="info-list__item"><i class="fa-brands fa-facebook-f"></i></li>
-                        <li class="info-list__item"><i class="fa-solid fa-plane-arrival"></i></li>
-                        <li class="info-list__item"><i class="fa-solid fa-pizza-slice"></i></li>
-                    </ul>
-                   
-                </ul>
-            </div>
+      <div class="container footer__container">
+        <div class="logo__container">
+          <p class="logo--text">M.</p>
         </div>
+        <div class="list__container">
+          <ul class="info-list info-list--location">
+            <li class="info-list__title">Location</li>
+            <li class="info-list__item">14 Paramore Street</li>
+            <li class="info-list__item">Mornington Peninsula</li>
+            <li class="info-list__item">Victoria 3552</li>
+          </ul>
+          <ul class="info-list info-list--contact">
+            <li class="info-list__title">Contact</li>
+            <li class="info-list__item">P: (03) 9283 4726</li>
+            <li class="info-list__item">
+              E:
+              <a href="mailto:enquiries@mill.co" class="info-list__link"
+                >enquiries@mill.co</a
+              >
+            </li>
+          </ul>
+          <ul class="info-list info-list--hours">
+            <li class="info-list__title">Opening Hours</li>
+            <li class="info-list__item">Wed — Sat, 12-3pm | 6pm-late</li>
+            <li class="info-list__item">Sun, 12 noon til 3pm</li>
+            <li class="info-list__item">Mon — Tues, closed</li>
+          </ul>
+          <ul class="info-list info-list--social">
+            <li class="info-list__title">Social</li>
+            <ul class="social__list">
+              <li class="info-list__item">
+                <i class="fa-brands fa-instagram"></i>
+              </li>
+              <li class="info-list__item">
+                <i class="fa-brands fa-facebook-f"></i>
+              </li>
+              <li class="info-list__item">
+                <i class="fa-solid fa-plane-arrival"></i>
+              </li>
+              <li class="info-list__item">
+                <i class="fa-solid fa-pizza-slice"></i>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
