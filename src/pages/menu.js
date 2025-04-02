@@ -8,7 +8,7 @@ export default function loadMenu() {
   content.textContent = "";
 
   const menuSection = document.createElement("section");
-  menuSection.className = "container menu-section";
+  menuSection.className = "menu-section";
 
   menuSection.appendChild(loadMenuHeader());
 

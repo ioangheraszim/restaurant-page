@@ -1,6 +1,6 @@
 export default function loadMenuHeader() {
   const menuCard = document.createElement("div");
-  menuCard.className = "menu-card__container";
+  menuCard.className = "container menu-card__container";
   const menuContent = document.createElement("div");
   menuContent.className = "menu__content";
 

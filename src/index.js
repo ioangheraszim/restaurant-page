@@ -5,7 +5,8 @@ import loadMenu from "./pages/menu.js";
 import { hello } from "./test.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadMenu();
+  // loadMenu();
+  loadHome();
 
   const images = document.querySelectorAll(".carousel-inner img");
   const prevButton = document.querySelector(".prev");

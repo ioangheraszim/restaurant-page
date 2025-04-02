@@ -3,7 +3,7 @@ import { cardsData } from "../data/contentData";
 
 export default function homeContent() {
   const contentContainer = document.createElement("div");
-  contentContainer.className = "content__container";
+  contentContainer.className = "container content__container";
 
   cardsData.forEach((card) => {
     // Create the content card

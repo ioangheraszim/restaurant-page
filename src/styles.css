@@ -48,19 +48,11 @@ h5,
 h6 {
   overflow-wrap: break-word;
   font-family: "Frank Ruhl Libre", serif;
+  text-wrap: balance;
 }
 
 p {
   text-wrap: pretty;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
 }
 
 ul li {
@@ -106,10 +98,9 @@ button {
   background-color: transparent;
 }
 
-.nav__container,
-.content__container,
-.menu {
-  width: min(100%, 375px);
+
+.nav__container {
+  width: min(100% - 2rem, 700px);
 }
 
 .nav__container,
@@ -261,7 +252,7 @@ button {
 }
 
 .footer__container {
-  padding: 5rem;
+  padding: 5rem 2rem;
 }
 
 .info-list__title {
@@ -310,7 +301,7 @@ button {
   font-family: "Frank Ruhl Libre", serif;
   text-transform: none;
   font-weight: 200;
-  font-size: 1.6rem;
+  font-size: clamp(1rem, 1.2rem, 2rem);
 }
 
 .menu__header {
@@ -319,7 +310,7 @@ button {
 }
 
 .menu {
-  padding: 20rem 1rem 5rem 1rem;
+  padding: 10rem 1rem 0rem 1rem;
   width: 100%;
 }
 
@@ -367,7 +358,7 @@ button {
   width: 100%;
   overflow: hidden;
   margin: auto;
-  padding: 5rem 0;
+  padding: 5rem 1rem;
 }
 
 .carousel-inner {
@@ -376,12 +367,11 @@ button {
 }
 
 .carousel-inner img {
-  width: 375px; 
-  height: 300px; 
+  aspect-ratio: 16/9;
+  max-width: 100%;
   object-fit: cover;
   flex-shrink: 0;
   display: none;
-  border-radius: 1rem;
 }
 
 .carousel-inner img.active {
@@ -402,13 +392,9 @@ button {
   }
 }
 
-@media (min-width: 900px) {
-  .nav__container,
-  .content__container,
-  .footer__container,
-  .menu-card__container,
-  .menu,
-  .carousel-container {
+@media (min-width: 768px) {
+
+  .container, .menu {
     width: min(100% - 2rem, 1170px);
     margin: 0 auto;
   }
@@ -489,17 +475,20 @@ button {
 
   /* Menu section start */
 
+  .menu {
+    padding: 20rem 1rem 5rem 1rem;
+  }
+
   .menu-card__container {
     padding: 0 12rem;
   }
 
-  .menu-card__paragraph {
-    font-size: 2.5rem;
+  .menu-card__paragraph  {
+    font-size: 2rem;
   }
 
   .carousel-inner img {
     width: 100%; 
-    width: 1125px; 
     height: 750px; 
     object-fit: cover;
     flex-shrink: 0;
@@ -525,7 +514,7 @@ button {
 
   .next {
     position: absolute;
-    right: 3rem;
+    right: 1rem;
   }
 
   .footer__container {
