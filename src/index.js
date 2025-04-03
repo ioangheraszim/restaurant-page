@@ -2,11 +2,14 @@
 import "./styles.css";
 import loadHome from "./pages/home.js";
 import loadMenu from "./pages/menu.js";
+import loadAbout from "./pages/about.js";
+
 import { hello } from "./test.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  // loadMenu();
-  loadHome();
+  // loadAbout();
+  loadMenu();
+  // loadHome();
 
   const images = document.querySelectorAll(".carousel-inner img");
   const prevButton = document.querySelector(".prev");

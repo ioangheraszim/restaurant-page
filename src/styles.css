@@ -136,7 +136,7 @@ button {
 
 /* Hero section */
 .hero-section,
-.menu-section {
+.title-section {
   min-height: 100vh;
   background-image: url(./assets/food-3.jpg);
   background-position: center center;
@@ -145,7 +145,7 @@ button {
 }
 
 .hero__container,
-.menu-card__container {
+.title-card__container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -274,12 +274,12 @@ button {
 
 /* Menu Page Start */
 
-.menu-section {
+.title-section {
   min-height: 30vh;
   background-image: url(./assets/food-4.jpg);
 }
 
-.menu-card__container {
+.title-card__container {
   height: 30%;
   width: 100%;
   background-color: var(--white);
@@ -291,13 +291,13 @@ button {
   padding: 0.5rem;
 }
 
-.menu-card__title {
+.title-card__title {
   font-family: "Karla", sans-serif;
   font-weight: 400;
   font-size: 1rem;
 }
 
-.menu-card__paragraph {
+.title-card__paragraph {
   font-family: "Frank Ruhl Libre", serif;
   text-transform: none;
   font-weight: 200;
@@ -384,7 +384,7 @@ button {
 
 /* Menu Page End */
 
-@media (min-width: 750px) {
+@media (min-width: 550px) and (max-width: 767px) {
   .list__container {
     display: grid;
     grid-template-columns: repeat(2, minmax(100px, 1fr));
@@ -479,11 +479,11 @@ button {
     padding: 20rem 1rem 5rem 1rem;
   }
 
-  .menu-card__container {
+  .title-card__container {
     padding: 0 12rem;
   }
 
-  .menu-card__paragraph  {
+  .title-card__paragraph  {
     font-size: 2rem;
   }
 
