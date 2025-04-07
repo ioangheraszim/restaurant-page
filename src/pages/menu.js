@@ -9,8 +9,8 @@ export default function loadMenu() {
 
   content.appendChild(
     loadTitleCard(
-      "THE MILLER ETHOS",
-      "A collaboration of esteemed international chefs Andrew and Celia Miller in conjunction with our many local providers."
+      "MADE FROM SCRATCH",
+      "The Miller menu is a celebration of the historic Mornington coastal region and its abundance of vibrant local producers."
     )
   );
   content.appendChild(loadMenuList());

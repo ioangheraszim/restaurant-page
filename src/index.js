@@ -7,8 +7,8 @@ import loadAbout from "./pages/about.js";
 import { hello } from "./test.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  // loadAbout();
-  loadMenu();
+  loadAbout();
+  // loadMenu();
   // loadHome();
 
   const images = document.querySelectorAll(".carousel-inner img");

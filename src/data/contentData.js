@@ -36,11 +36,23 @@ export const menuData = [
     items: [
       { dish: "Oyster – shaved scallop, sea herbs, lemon (GF)", price: 4.5 },
       { dish: "Mill house bread – smoked cultured butter (V)", price: 5 },
-      { dish: "7 spiced pepita seeds – orange, garlic, capsicum, pork (GF)", price: 5 },
-      { dish: "Tasmanian salmon – ginger, kaffir, finger lime, grape (GF)", price: 5 },
+      {
+        dish: "7 spiced pepita seeds – orange, garlic, capsicum, pork (GF)",
+        price: 5,
+      },
+      {
+        dish: "Tasmanian salmon – ginger, kaffir, finger lime, grape (GF)",
+        price: 5,
+      },
       { dish: "Chicken liver pate – spiced bread, crackling", price: 8 },
-      { dish: "Scallop cannelloni – nettle, bower spinach, katsuobushi", price: 9 },
-      { dish: "Kangaroo tartare – green olive, miso, flax cracker (GF)", price: 12 },
+      {
+        dish: "Scallop cannelloni – nettle, bower spinach, katsuobushi",
+        price: 9,
+      },
+      {
+        dish: "Kangaroo tartare – green olive, miso, flax cracker (GF)",
+        price: 12,
+      },
     ],
   },
   {
@@ -48,24 +60,74 @@ export const menuData = [
     subtitle: "LARGER SINGLE-SERVE DISHES",
     items: [
       { dish: "Arcadia Lamb - cucumber, lemon, honey, sake (GF)", price: 4.5 },
-      { dish: "Roasted duck - pickled turnip, black garlic, slow-cooked grains", price: 5 },
-      { dish: "Smoked Abalone - pearl oyster, heart of palm, black vinegar (GF)", price: 5 },
-      { dish: "Pickled Quail - walnut crackling, cured seaweed, star anise", price: 5 },
-      { dish: "Confit Salmon - shiitake, grains, horseradish emulsion", price: 8 },
-      { dish: "Slow Cooked Cod - eggplant, hazelnut, juniper berry (GF)", price: 9 },
-      { dish: "Pickled Mussels– nettle, bower spinach, katsuobushi", price: 12 },
+      {
+        dish: "Roasted duck - pickled turnip, black garlic, slow-cooked grains",
+        price: 5,
+      },
+      {
+        dish: "Smoked Abalone - pearl oyster, heart of palm, black vinegar (GF)",
+        price: 5,
+      },
+      {
+        dish: "Pickled Quail - walnut crackling, cured seaweed, star anise",
+        price: 5,
+      },
+      {
+        dish: "Confit Salmon - shiitake, grains, horseradish emulsion",
+        price: 8,
+      },
+      {
+        dish: "Slow Cooked Cod - eggplant, hazelnut, juniper berry (GF)",
+        price: 9,
+      },
+      {
+        dish: "Pickled Mussels– nettle, bower spinach, katsuobushi",
+        price: 12,
+      },
     ],
   },
   {
     title: "DESSERT",
     subtitle: "SMALL SERVINGS, IDEAL FOR SHARING",
     items: [
-      { dish: "Lychee tart – filtered créme fràiche, blueberries (V)", price: 12 },
+      {
+        dish: "Lychee tart – filtered créme fràiche, blueberries (V)",
+        price: 12,
+      },
       { dish: "Caramel cheesecake – apple leaves, ginger (V)", price: 5 },
-      { dish: "Sweet potato ice cream – shaved pear, cacao (V) (GF)", price: 5 },
-      { dish: "Pickled Quail - walnut crackling, cured seaweed, star anise", price: 5 },
+      {
+        dish: "Sweet potato ice cream – shaved pear, cacao (V) (GF)",
+        price: 5,
+      },
+      {
+        dish: "Pickled Quail - walnut crackling, cured seaweed, star anise",
+        price: 5,
+      },
       { dish: "Chocolate friand – quince paste, ginger root (V)", price: 8 },
     ],
+  },
+];
+
+export const aboutData = [
+  {
+    title: "WHAT WE'RE ABOUT",
+    content: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus."
+    ],
+    image: chefPic,
+    alt: "picture of a chef cooking",
+  },
+  {
+    title: "MADE FROM SCRATCH",
+    content: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    ],
+    image: ramenPic,
+    alt: "picture of a ramen"
   },
 ];
 
