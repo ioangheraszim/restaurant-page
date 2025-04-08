@@ -1,7 +1,7 @@
 // Menu page
 import loadTitleCard from "../components/titleCard";
 import loadMenuList from "../components/MenuList";
-import loadCarousel from "../components/MenuCarousel";
+import loadCarousel from "../components/carousel";
 
 export default function loadMenu() {
   const content = document.getElementById("content");
