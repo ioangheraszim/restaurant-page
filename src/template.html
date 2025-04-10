@@ -16,11 +16,11 @@
     <header>
       <nav class="container nav__container">
         <div class="logo__container">
-          <p class="logo--text">M.</p>
+          <button id="home" class="logo--text">M.</button>
         </div>
         <div class="home--buttons">
-          <button id="home">Menu</button>
-          <button id="menu">About</button>
+          <button id="menu">Menu</button>
+          <button id="about">About</button>
           <button id="functions">Functions</button>
           <button id="news">News</button>
           <button class="reservations" id="reservations">Reservations</button>
@@ -43,12 +43,15 @@
           </div>
         </div>
       </section>
-      <section class="abouts">
-        <div class="container abouts-container">
-          <div class="abouts__content">
-            <div class="para__container">
-              <h5 class="para__title">WHAT WE'RE ABOUT</h5>
-              <p class="para__content">
+      <section class="functions">
+        <div class="container functions__container">
+          <div class="functions__card">
+            <div class="info">
+              <div class="info__header">
+                <h3 class="title title--large">PRIVATE DINING HALL</h3>
+                <p class="subtitle">WEDDINGS & LARGER GROUPS</p>
+              </div>
+              <p class="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore.
                 <br />
@@ -57,64 +60,80 @@
                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                 dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur.
-                <br />
-                <br />
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum. Sed ut
-                perspiciatis unde omnis iste natus.
               </p>
+              <div>
+                <button class="btn btn--subline">Enquire</button>
+              </div>             
             </div>
-            <div class="abouts-image__container">
+            <div class="image__container">
               <img
-                class="about__image"
-                src="./assets/chef.jpg"
-                alt="image of a chef cooking"
+                class="image"
+                src="./assets/carousel-1.jpg"
+                alt="image of food"
               />
             </div>
           </div>
-          <div class="abouts__content">
-            <div class="para__container">
-              <h5 class="para__title">MADE FROM SCRATCH</h5>
-              <p class="para__content">
+          <div class="functions__card">
+            <div class="info">
+              <div class="info__header">
+                <h3 class="title title--large">PRIVATE DINING HALL</h3>
+                <p class="subtitle">WEDDINGS & LARGER GROUPS</p>
+              </div>
+              <p class="">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.
+                eiusmod tempor incididunt ut labore et dolore.
                 <br />
                 <br />
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
-                <br />
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur.
               </p>
+              <div>
+                <button class="btn btn--subline">Enquire</button>
+              </div>             
             </div>
-            <div class="abouts-image__container">
+            <div class="image__container">
               <img
-                class="about__image"
-                src="./assets/wine.jpg"
-                alt="image of a chef cooking"
+                class="image"
+                src="./assets/carousel-1.jpg"
+                alt="image of food"
               />
             </div>
           </div>
         </div>
       </section>
-      <section class="cta">
-        <div class="container cta__container">
-          <div class="cta__card">
-            <p class="title-card__paragraph cta-paragraph">
-              Join us soon for great food and fine wine in a relaxed seaside
-              setting
-            </p>
-            <ul class="cta-buttons__container">
-              <li class="cta__btn">
-                <button class="text-content__btn">View Menu</button>
-              </li>
-              <li class="cta__btn">
-                <button class="text-content__btn cta__btn">
-                  Make a Reservation
-                </button>
-              </li>
-            </ul>
-          </div>
+      <section class="contact">
+        <div class="container form__container">
+          <p class="paragraph paragraph--large">
+            Let us know the details of your event, then relax, and leave the planning to us.
+          </p>
+          <form action="#">
+            <div class="form-group">
+              <div class="field-container">
+                <label for="name" class="field-label">Name:</label>
+                <input name="name" id="name" type="text" class="field-input" placeholder="Enter your name">
+              </div>
+              <div class="field-container">
+                <label for="number" class="field-label">Contact Number:</label>
+                <input name="number" id="number" type="text" class="field-input" placeholder="Enter contact number here">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="field-container">
+                <label for="event" class="field-label">Event Type:</label>
+                <input name="event" id="event" type="text" class="field-input" placeholder="eg Wedding Reception, Corporate Event etc.">
+              </div>
+              <div class="field-container">
+                <label for="party-size" class="field-label">Party Size (approx):</label>
+                <input name="party-size" id="party-size" type="text" class="field-input" placeholder="eg 20 people">
+              </div>
+            </div>
+            <div class="field-container">
+              <label for="information" class="field-label">Additional Information:</label>
+              <textarea class="field-input" name="information" id="information" maxlength="5000" rows="8" placeholder="Anything you feel would make your event more memorable"></textarea>
+            </div>
+          </form>
         </div>
       </section>
     </div>

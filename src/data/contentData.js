@@ -1,6 +1,8 @@
 import ramenPic from "../assets/ramen.jpg";
 import chefPic from "../assets/chef.jpg";
 import winePic from "../assets/wine.jpg";
+import cPic1 from "../assets/carousel-1.jpg";
+import cPic2 from "../assets/carousel-2.jpg";
 
 export const cardsData = [
   {
@@ -131,3 +133,25 @@ export const aboutData = [
   },
 ];
 
+export const functionsData = [
+  {
+    title: "PRIVATE DINING HALL",
+    subtitle: "WEDDINGS & LARGER GROUPS",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.<br /><br />
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+    buttonText: "Enquire",
+    imageSrc: cPic1,
+    imageAlt: "image of food"
+  },
+  {
+    title: "PRIVATE DINING HALL",
+    subtitle: "WEDDINGS & LARGER GROUPS",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.<br /><br />
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+    buttonText: "Enquire",
+    imageSrc: cPic2,
+    imageAlt: "image of food"
+  }
+];

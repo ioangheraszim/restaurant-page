@@ -8,6 +8,7 @@
   --off-black: #333333;
   --white: #ffffff;
 }
+
 *,
 *::before,
 *::after {
@@ -29,7 +30,7 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 120%;
+  max-width: 100%;
 }
 
 input,
@@ -82,6 +83,7 @@ button {
 }
 
 .logo--text {
+  padding: 0;
   font-family: "Frank Ruhl Libre", serif;
   font-size: 3rem;
   color: var(--white-smoke);
@@ -281,6 +283,56 @@ button {
 
 /* End Abouts section */
 
+/* Start Functions */
+
+.functions__card, .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.functions__card {
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  max-width: 100%;
+  padding: 2rem 0;
+}
+
+.image__container {
+  margin: 2rem 0;
+}
+
+.title {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+
+.title--large {
+  font-size: 1.87rem;
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.subtitle {
+  padding: 0 0 1rem;
+}
+
+.btn--subline {
+  text-shadow: none;
+  border-bottom: 1px solid var(--black-russian);
+  color: var(--off-black);
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.btn--subline:hover {
+  transform: scale(1.1);
+  transition: transform 300ms ease-in-out;
+}
+
+/* End Functions */
+
 /* Start CTA section */
 
 .cta__card {
@@ -309,6 +361,66 @@ button {
 
 /* End CTA section */
 
+/* Start Contact Form Section */
+
+form {
+  margin: 2rem 0;
+}
+
+.contact {
+  background-color: var(--white);
+}
+
+.form__container {
+  padding: 5rem .85rem;
+  max-width: 765px;
+}
+
+.paragraph--large {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 300;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-label {
+  font-size: .875rem;
+  color: var(--off-black);
+  padding: 1rem 0;
+}
+
+.field-input {
+  font-size: .9rem;
+  padding: .9rem ;
+  border: 1px solid #e5e5e5;
+  outline: none;
+}
+
+.field-label--error {
+  color: red;
+}
+
+.field-input--error {
+  border: 1px solid red;
+  outline: none;
+}
+
+.field-input:focus{
+  border: 1px solid blue;
+}
+
+/* End Contact Form Section */
+
 /* Start footer section */
 
 .footer {
@@ -316,7 +428,7 @@ button {
 }
 
 .footer__container {
-  padding: 5rem 2rem;
+  padding: 5rem 1rem;
 }
 
 .info-list__title {
@@ -374,7 +486,8 @@ button {
 }
 
 .menu,
-.abouts-container {
+.abouts-container,
+.functions {
   padding: 15rem 1rem 0rem 1rem;
   width: 100%;
 }
@@ -468,6 +581,10 @@ button {
     grid-template-columns: repeat(2, minmax(100px, 1fr));
     gap: 1rem;
   }
+
+  .paragraph--large {
+    font-size: 1.875rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -475,6 +592,10 @@ button {
   .menu {
     width: min(100% - 2rem, 1170px);
     margin: 0 auto;
+  }
+
+  .paragraph--large {
+    font-size: 2.25rem;
   }
 
   .nav__container {
@@ -627,9 +748,26 @@ button {
 
   /* Abouts End */
 
+  /* Start Functions */
+
+  .functions__card {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .info {
+    width: 50%;
+    padding-right: 1rem;
+  }
+
+  .image__container {
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  /* End functions */
+
   /* Start CTA section */
-
-
 
   .cta-buttons__container {
     display: flex;
@@ -647,7 +785,7 @@ button {
     transform: translate(-50%, -45%);
     width: min(100% - 1rem, 760px);
     margin: 0 auto;
-}
+  }
 
   .cta-paragraph {
     font-size: 2.25rem !important;
@@ -655,6 +793,28 @@ button {
   }
 
   /* End CTA section */
+
+  /* Start Contact Form Section */
+
+  .form-group {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .field-container {
+    width: 50%;
+  }
+
+  .field-container:nth-child(2) {
+    width: 50%;
+  }
+
+  .field-container:nth-child(3) {
+    width: 100%;
+  }
+
+  /* End Contact Form Section */
 
   .footer__container {
     padding: 6rem 0;

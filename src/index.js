@@ -3,37 +3,30 @@ import "./styles.css";
 import loadHome from "./pages/home.js";
 import loadMenu from "./pages/menu.js";
 import loadAbout from "./pages/about.js";
-
-import { hello } from "./test.js";
+import loadFunctions from "./pages/functions.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadAbout();
-  // loadMenu();
   // loadHome();
 
-  const images = document.querySelectorAll(".carousel-inner img");
-  const prevButton = document.querySelector(".prev");
-  const nextButton = document.querySelector(".next");
+  // // solo logo button
+  // const homeButton = document.getElementById("home");
+  // homeButton.addEventListener("click", () => {
+  //   loadHome();
+  // });
 
-  let currentIndex = 0;
+  // // navigation menu buttons
+  // const buttonActions = {
+  //   menu: loadMenu,
+  //   about: loadAbout,
+  //   functions: loadFunctions,
+  //   // news: loadNews,
+  //   // reservations: loadReservations,
+  // };
 
-  function updateCarousel() {
-    images.forEach((img, index) => {
-      img.classList.toggle("active", index === currentIndex);
-    });
-  }
-
-  prevButton.addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    updateCarousel();
-  });
-
-  nextButton.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % images.length;
-    updateCarousel();
-  });
-
-  updateCarousel();
+  // Object.keys(buttonActions).forEach((id) => {
+  //   const button = document.getElementById(id);
+  //   if (button) {
+  //     button.addEventListener("click", buttonActions[id]);
+  //   }
+  // });
 });
-
-console.log(hello);
