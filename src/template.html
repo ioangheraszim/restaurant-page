@@ -4,11 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="stylesheet"
+      rel="stylesheet preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
     />
     <title>Restaurant Page</title>
   </head>
@@ -34,106 +43,89 @@
       <section class="title-section">
         <div class="container title-card__container">
           <div class="menu__content">
-            <h5 class="title-card__title">MADE FROM SCRATCH</h5>
+            <h5 class="title-card__title">NEWS & INTERVIEWS</h5>
             <div class="separator separator--black"></div>
             <p class="title-card__paragraph">
-              The Miller menu is a celebration of the historic Mornington
-              coastal region and its abundance of vibrant local producers.
+              Each month we share restaurant updates and interviews with some of
+              the local producers that feature on our menu
             </p>
           </div>
         </div>
       </section>
-      <section class="functions">
-        <div class="container functions__container">
-          <div class="functions__card">
-            <div class="info">
-              <div class="info__header">
-                <h3 class="title title--large">PRIVATE DINING HALL</h3>
-                <p class="subtitle">WEDDINGS & LARGER GROUPS</p>
+      <section class="news">
+        <div class="container news__container">
+          <div class="news__grid">
+            <div class="news__item">
+              <div class="news__image-wrapper">
+                <img
+                  class="news__image"
+                  src="./assets/grid-1.webp"
+                  alt=""
+                />
               </div>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore.
-                <br />
-                <br />
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.
-              </p>
-              <div>
-                <button class="btn btn--subline">Enquire</button>
-              </div>             
+              <div class="news__content">
+                <h6 class="news__date">July 31, 2025</h6>
+                <h2 class="news__title">
+                  July's Featured Provider: Grange Winery
+                </h2>
+              </div>
             </div>
-            <div class="image__container">
-              <img
-                class="image"
-                src="./assets/carousel-1.jpg"
-                alt="image of food"
-              />
+            <div class="news__item">
+              <div class="news__image-wrapper">
+                <img class="news__image" src="./assets/grid-2.webp" alt="" />
+              </div>
+              <div class="news__content">
+                <h6 class="news__date">April 19, 2023</h6>
+                <h2 class="news__title">
+                  We've Launched Our New Website
+                </h2>
+              </div>
+            </div>
+            <div class="news__item">
+              <div class="news__image-wrapper">
+                <img class="news__image" src="./assets/grid-3.webp" alt="" />
+              </div>
+              <div class="news__content">
+                <h6 class="news__date">May 14, 2021</h6>
+                <h2 class="news__title">
+                  May's Featured Provider: Parnell Sea Food
+                </h2>
+              </div>
+            </div>
+            <div class="news__item">
+              <div class="news__image-wrapper">
+                <img class="news__image" src="./assets/grid-4.webp" alt="" />
+              </div>
+              <div class="news__content">
+                <h6 class="news__date">March 17, 2023</h6>
+                <h2 class="news__title">
+                  New Dessert Menu Coming Soon
+                </h2>
+              </div>
+            </div>
+            <div class="news__item">
+              <div class="news__image-wrapper">
+                <img class="news__image" src="./assets/grid-5.webp" alt="" />
+              </div>
+              <div class="news__content">
+                <h6 class="news__date">July 31, 2022</h6>
+                <h2 class="news__title">
+                  Introducing or new Sous Chef: Gordon Ramsey
+                </h2>
+              </div>
+            </div>
+            <div class="news__item">
+              <div class="news__image-wrapper">
+                <img class="news__image" src="./assets/grid-6.webp" alt="" />
+              </div>
+              <div class="news__content">
+                <h6 class="news__date">August 20, 2024</h6>
+                <h2 class="news__title">
+                  News casual dining and function space
+                </h2>
+              </div>
             </div>
           </div>
-          <div class="functions__card">
-            <div class="info">
-              <div class="info__header">
-                <h3 class="title title--large">PRIVATE DINING HALL</h3>
-                <p class="subtitle">WEDDINGS & LARGER GROUPS</p>
-              </div>
-              <p class="">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore.
-                <br />
-                <br />
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.
-              </p>
-              <div>
-                <button class="btn btn--subline">Enquire</button>
-              </div>             
-            </div>
-            <div class="image__container">
-              <img
-                class="image"
-                src="./assets/carousel-1.jpg"
-                alt="image of food"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="contact">
-        <div class="container form__container">
-          <p class="paragraph paragraph--large">
-            Let us know the details of your event, then relax, and leave the planning to us.
-          </p>
-          <form action="#">
-            <div class="form-group">
-              <div class="field-container">
-                <label for="name" class="field-label">Name:</label>
-                <input name="name" id="name" type="text" class="field-input" placeholder="Enter your name">
-              </div>
-              <div class="field-container">
-                <label for="number" class="field-label">Contact Number:</label>
-                <input name="number" id="number" type="text" class="field-input" placeholder="Enter contact number here">
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="field-container">
-                <label for="event" class="field-label">Event Type:</label>
-                <input name="event" id="event" type="text" class="field-input" placeholder="eg Wedding Reception, Corporate Event etc.">
-              </div>
-              <div class="field-container">
-                <label for="party-size" class="field-label">Party Size (approx):</label>
-                <input name="party-size" id="party-size" type="text" class="field-input" placeholder="eg 20 people">
-              </div>
-            </div>
-            <div class="field-container">
-              <label for="information" class="field-label">Additional Information:</label>
-              <textarea class="field-input" name="information" id="information" maxlength="5000" rows="8" placeholder="Anything you feel would make your event more memorable"></textarea>
-            </div>
-          </form>
         </div>
       </section>
     </div>

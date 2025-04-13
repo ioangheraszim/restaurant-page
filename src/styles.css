@@ -1,5 +1,5 @@
 /* styles.css */
-@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"); */
 :root {
   --white-smoke: #f4fbf5;
   --black-russian: #24252c;
@@ -78,8 +78,13 @@ button {
   color: #fff;
 }
 
+.container {
+  width: min(100% - 1rem, 475px);
+  margin: 0 auto;
+}
+
 .reservations {
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 1.5rem 0 1.5rem 1.5rem;
 }
 
 .logo--text {
@@ -285,7 +290,8 @@ button {
 
 /* Start Functions */
 
-.functions__card, .info {
+.functions__card,
+.info {
   display: flex;
   flex-direction: column;
 }
@@ -367,12 +373,8 @@ form {
   margin: 2rem 0;
 }
 
-.contact {
-  background-color: var(--white);
-}
-
 .form__container {
-  padding: 5rem .85rem;
+  padding: 10rem 0.85rem;
   max-width: 765px;
 }
 
@@ -394,14 +396,14 @@ form {
 }
 
 .field-label {
-  font-size: .875rem;
+  font-size: 0.875rem;
   color: var(--off-black);
   padding: 1rem 0;
 }
 
 .field-input {
-  font-size: .9rem;
-  padding: .9rem ;
+  font-size: 0.9rem;
+  padding: 0.9rem;
   border: 1px solid #e5e5e5;
   outline: none;
 }
@@ -415,11 +417,79 @@ form {
   outline: none;
 }
 
-.field-input:focus{
+.field-input:focus {
   border: 1px solid blue;
 }
 
+.enquiry-container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--enquiry {
+  color: var(--white);
+  background-color: var(--black-russian);
+}
+
+.btn--enquiry:hover {
+  opacity: 0.75;
+}
+
 /* End Contact Form Section */
+
+/* Start News Section */
+.news {
+  margin: 20rem 0 10rem 0;
+}
+.news__grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(200px, 1fr));
+  grid-auto-flow: row;
+  gap: 1.5rem;
+}
+
+.news__item {
+  position: relative;
+  cursor: pointer;
+  text-transform: none;
+  text-align: start;
+}
+
+.news__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 16/9;
+}
+
+.news__content {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.news__date,
+.news__content {
+  color: var(--white);
+  text-shadow: 2px 2px 5px #000000;
+}
+
+.news__date {
+  font-size: 1rem;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+.news__title {
+  font-size: 1.65rem;
+  font-family: "Frank Ruhl Libre", sans-serif;
+  font-weight: 400;
+}
+
+/* End News Section */
 
 /* Start footer section */
 
@@ -453,6 +523,7 @@ form {
 .title-section {
   min-height: 30vh;
   background-image: url(./assets/food-4.jpg);
+  margin: 0 0 15rem 0;
 }
 
 .title-card__container {
@@ -488,7 +559,6 @@ form {
 .menu,
 .abouts-container,
 .functions {
-  padding: 15rem 1rem 0rem 1rem;
   width: 100%;
 }
 
@@ -564,6 +634,11 @@ form {
 /* Menu Page End */
 
 @media (min-width: 550px) and (max-width: 767px) {
+  .container {
+    width: min(100% - 2rem, 765px);
+    margin: 0 auto;
+  }
+
   .menu {
     padding: 20rem 1rem 5rem 1rem;
   }
@@ -584,6 +659,21 @@ form {
 
   .paragraph--large {
     font-size: 1.875rem;
+  }
+
+  .news__content {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-10%, -30%);
+  }
+
+  .news__date {
+    font-size: 1rem;
+  }
+  
+  .news__title {
+    font-size: 2.25rem;
   }
 }
 
@@ -815,6 +905,32 @@ form {
   }
 
   /* End Contact Form Section */
+
+  /* Start News Section */
+  .news__grid {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+
+  .news__content {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-10%, -30%);
+  }
+
+  .news__date {
+    font-size: 1rem;
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    padding: 1rem 0;
+  }
+  
+  .news__title {
+    font-size: 2.25rem;
+    font-family: "Frank Ruhl Libre", sans-serif;
+    font-weight: 400;
+  }
+  /* End News Section */
 
   .footer__container {
     padding: 6rem 0;

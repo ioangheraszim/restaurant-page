@@ -2,6 +2,7 @@
 import loadTitleCard from "../components/titleCard";
 import loadCarousel from "../components/carousel";
 import loadReservationCard from "../components/ReservationCard";
+import loadContactForm from "../components/ContactForm";
 
 export default function loadFunctions() {
   const content = document.getElementById("content");
@@ -15,8 +16,8 @@ export default function loadFunctions() {
   );
 
   content.appendChild(loadReservationCard());
-
   content.appendChild(loadCarousel());
+  content.appendChild(loadContactForm("Send Enquiry"));
 
   return content;
 }

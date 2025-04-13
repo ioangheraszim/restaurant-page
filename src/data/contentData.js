@@ -3,6 +3,12 @@ import chefPic from "../assets/chef.jpg";
 import winePic from "../assets/wine.jpg";
 import cPic1 from "../assets/carousel-1.jpg";
 import cPic2 from "../assets/carousel-2.jpg";
+import grid1 from "../assets/grid-1.webp";
+import grid2 from "../assets/grid-2.webp";
+import grid3 from "../assets/grid-3.webp";
+import grid4 from "../assets/grid-4.webp";
+import grid5 from "../assets/grid-5.webp";
+import grid6 from "../assets/grid-6.webp";
 
 export const cardsData = [
   {
@@ -116,7 +122,7 @@ export const aboutData = [
     content: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus."
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus.",
     ],
     image: chefPic,
     alt: "picture of a chef cooking",
@@ -126,10 +132,10 @@ export const aboutData = [
     content: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     ],
     image: ramenPic,
-    alt: "picture of a ramen"
+    alt: "picture of a ramen",
   },
 ];
 
@@ -142,7 +148,7 @@ export const functionsData = [
                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
     buttonText: "Enquire",
     imageSrc: cPic1,
-    imageAlt: "image of food"
+    imageAlt: "image of food",
   },
   {
     title: "PRIVATE DINING HALL",
@@ -152,6 +158,39 @@ export const functionsData = [
                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
     buttonText: "Enquire",
     imageSrc: cPic2,
-    imageAlt: "image of food"
-  }
+    imageAlt: "image of food",
+  },
+];
+
+export const newsItems = [
+  {
+    date: "July 31, 2025",
+    title: "July's Featured Provider: Grange Winery",
+    imageSrc: grid1,
+  },
+  {
+    date: "April 19, 2023",
+    title: "We've Launched Our New Website",
+    imageSrc: grid2,
+  },
+  {
+    date: "May 14, 2021",
+    title: "May's Featured Provider: Parnell Sea Food",
+    imageSrc: grid3,
+  },
+  {
+    date: "March 17, 2023",
+    title: "New Dessert Menu Coming Soon",
+    imageSrc: grid4,
+  },
+  {
+    date: "July 31, 2022",
+    title: "Introducing our new Sous Chef: Gordon Ramsey",
+    imageSrc: grid5,
+  },
+  {
+    date: "August 20, 2024",
+    title: "New casual dining and function space",
+    imageSrc: grid6,
+  },
 ];

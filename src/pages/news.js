@@ -1,6 +1,7 @@
 // News page
+import loadNewsItems from "../components/NewsItems";
 import loadTitleCard from "../components/titleCard";
-
+import loadCTA from "../components/CTACard";
 export default function loadNews() {
   const content = document.getElementById("content");
   content.textContent = "";
@@ -12,5 +13,7 @@ export default function loadNews() {
     )
   );
 
+  content.appendChild(loadNewsItems());
+  content.appendChild(loadCTA());
   return content;
 }
