@@ -11,7 +11,7 @@ export default function loadAboutsContent() {
 
     aboutData.forEach((data) => {
         const contentBlock = document.createElement('div');
-        contentBlock.className = 'abouts__content';
+        contentBlock.className = 'container abouts__content';
 
         // Para Container
         const paraContainer = document.createElement('div');

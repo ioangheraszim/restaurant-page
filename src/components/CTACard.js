@@ -1,5 +1,9 @@
 // CTA Card file
 
+import loadMenu from "../pages/menu";
+import loadReservations from "../pages/reservations";
+import scrollToTop from "../scripts/scrollTop";
+
 export default function loadCTA() {
     const ctaSection = document.createElement('section');
     ctaSection.className = 'cta';
@@ -30,6 +34,16 @@ export default function loadCTA() {
     ctnBtnTwo.className = 'text-content__btn';
     ctnBtnOne.textContent = 'View Menu';
     ctnBtnTwo.textContent = 'Make a Reservation';
+
+    ctnBtnOne.addEventListener("click", () => {
+        loadMenu();
+        scrollToTop();
+    });
+    
+    ctnBtnTwo.addEventListener("click", () => {
+        loadReservations();
+        scrollToTop();
+    });
 
     btnContainer.appendChild(ctnBtnItemOne);
     btnContainer.appendChild(ctnBtnItemTwo);

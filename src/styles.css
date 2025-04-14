@@ -78,8 +78,15 @@ button {
   color: #fff;
 }
 
+.nav--button {
+  color: black;
+  width: 100%;
+  text-align: start;
+  text-shadow: none;
+}
+
 .container {
-  width: min(100% - 1rem, 475px);
+  width: min(100% - 2rem, 475px);
   margin: 0 auto;
 }
 
@@ -101,8 +108,21 @@ button {
 }
 
 .home--buttons {
-  display: none;
-  background-color: transparent;
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  background-color: var(--white);
+  transform: scaleY(0); 
+  transform-origin: top; 
+  transition: transform 300ms ease-in, visibility 0s linear 300ms; 
+  visibility: hidden;
+  box-shadow: 0px 3px 10px 0px var(--black-russian);
+}
+
+.home--buttons.active {
+  transform: scaleY(1); 
+  visibility: visible; 
+  transition: transform 300ms ease-out, visibility 0s linear 0s;
 }
 
 .nav__container {
@@ -143,7 +163,6 @@ button {
 /* Hero section */
 .hero-section,
 .title-section {
-  min-height: 100vh;
   background-image: url(./assets/food-3.jpg);
   background-position: center center;
   background-size: cover;
@@ -165,6 +184,20 @@ button {
   border-radius: 50%;
   position: absolute;
   bottom: 15px;
+  animation: upDown 2s infinite ease-in-out;
+}
+
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0); 
+  }
+  50% {
+    transform: translateY(-20px); 
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .hero__btn__container:hover {
@@ -374,7 +407,7 @@ form {
 }
 
 .form__container {
-  padding: 10rem 0.85rem;
+  padding: 7.5rem 0.85rem;
   max-width: 765px;
 }
 
@@ -462,6 +495,7 @@ form {
   object-fit: cover;
   object-position: center;
   aspect-ratio: 16/9;
+  border-radius: 1rem;
 }
 
 .news__content {
@@ -597,7 +631,7 @@ form {
 }
 
 .menu__price {
-  padding: 0 2rem;
+  padding: 0 0 0 2rem;
 }
 
 .carousel {
@@ -606,7 +640,7 @@ form {
   width: 100%;
   overflow: hidden;
   margin: auto;
-  padding: 5rem 1rem;
+  padding: 5rem 0rem;
 }
 
 .carousel-inner {
@@ -631,12 +665,20 @@ form {
   display: none;
 }
 
+.abouts, .functions {
+  margin-top: 20rem;
+}
+
 /* Menu Page End */
 
 @media (min-width: 550px) and (max-width: 767px) {
   .container {
     width: min(100% - 2rem, 765px);
     margin: 0 auto;
+  }
+
+  .abouts, .functions {
+    margin-top: 10rem;
   }
 
   .menu {
@@ -689,13 +731,28 @@ form {
   }
 
   .nav__container {
-    .hamburger--menu {
-      display: none;
-    }
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .home--buttons {
-      display: block;
-    }
+  .hamburger--menu {
+    display: none;
+  }
+
+  .home--buttons {
+    position: static;
+    width: auto;
+    background-color: transparent;
+    color: var(--white);
+    transform: scaleY(1); 
+    visibility: visible;
+    box-shadow: none;
+  }
+  
+  .nav--button {
+    color: var(--white);
+    width: auto;
+    text-shadow: 2px 2px 5px #000000;
   }
 
   /* Start Home page */

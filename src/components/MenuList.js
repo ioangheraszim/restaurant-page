@@ -7,7 +7,7 @@ export default function loadMenuList() {
 
   menuData.forEach((item) => {
     const menuContainer = document.createElement("div");
-    menuContainer.className = "menu__container";
+    menuContainer.className = "container menu__container";
 
     const menuHeader = document.createElement("div");
     menuHeader.className = "menu__header";
