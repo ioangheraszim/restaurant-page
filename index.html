@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    />
+    <title>Restaurant Page</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <header>
+      <nav class="container nav__container">
+        <div class="logo__container">
+          <button id="home" class="logo--text">M.</button>
+        </div>
+        <div class="home--buttons">
+          <button class="nav--button" id="menu">Menu</button>
+          <button class="nav--button" id="about">About</button>
+          <button class="nav--button" id="functions">Functions</button>
+          <button class="nav--button" id="news">News</button>
+          <button class="nav--button" class="reservations" id="reservations">Reservations</button>
+        </div>
+        <div class="hamburger--menu">
+          <button id="menu-hamburger"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </nav>
+    </header>
+    <div id="content">
+      <section class="title-section">
+        <div class="container title-card__container">
+          <div class="menu__content">
+            <h5 class="title-card__title">NEWS & INTERVIEWS</h5>
+            <div class="separator separator--black"></div>
+            <p class="title-card__paragraph">
+              Each month we share restaurant updates and interviews with some of
+              the local producers that feature on our menu
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="container news__container">
+          <div class="news__grid">
+            <div class="news__item">
+              <div class="news__image-wrapper">
+                <img
+                  class="news__image"
+                  src="6cca53881e2f2d82c907.webp"
+                  alt=""
+                />
+              </div>
+              <div class="news__content">
+                <h6 class="news__date">July 31, 2025</h6>
+                <h2 class="news__title">
+                  July's Featured Provider: Grange Winery
+                </h2>
+              </div>
+            </div>
+            <div class="news__item">
+              <div class="news__image-wrapper">
+                <img class="news__image" src="a595b6bcb50630973e2d.webp" alt="" />
+              </div>
+              <div class="news__content">
+                <h6 class="news__date">April 19, 2023</h6>
+                <h2 class="news__title">
+                  We've Launched Our New Website
+                </h2>
+              </div>
+            </div>
+            <div class="news__item">
+              <div class="news__image-wrapper">
+                <img class="news__image" src="3957f122e89dcb60a923.webp" alt="" />
+              </div>
+              <div class="news__content">
+                <h6 class="news__date">May 14, 2021</h6>
+                <h2 class="news__title">
+                  May's Featured Provider: Parnell Sea Food
+                </h2>
+              </div>
+            </div>
+            <div class="news__item">
+              <div class="news__image-wrapper">
+                <img class="news__image" src="caf4103911c81833eed0.webp" alt="" />
+              </div>
+              <div class="news__content">
+                <h6 class="news__date">March 17, 2023</h6>
+                <h2 class="news__title">
+                  New Dessert Menu Coming Soon
+                </h2>
+              </div>
+            </div>
+            <div class="news__item">
+              <div class="news__image-wrapper">
+                <img class="news__image" src="33c86e25fbc880ef61cb.webp" alt="" />
+              </div>
+              <div class="news__content">
+                <h6 class="news__date">July 31, 2022</h6>
+                <h2 class="news__title">
+                  Introducing or new Sous Chef: Gordon Ramsey
+                </h2>
+              </div>
+            </div>
+            <div class="news__item">
+              <div class="news__image-wrapper">
+                <img class="news__image" src="23db0730f7bc4a0d5510.webp" alt="" />
+              </div>
+              <div class="news__content">
+                <h6 class="news__date">August 20, 2024</h6>
+                <h2 class="news__title">
+                  News casual dining and function space
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="logo__container">
+          <p class="logo--text">M.</p>
+        </div>
+        <div class="list__container">
+          <ul class="info-list info-list--location">
+            <li class="info-list__title">Location</li>
+            <li class="info-list__item">14 Paramore Street</li>
+            <li class="info-list__item">Mornington Peninsula</li>
+            <li class="info-list__item">Victoria 3552</li>
+          </ul>
+          <ul class="info-list info-list--contact">
+            <li class="info-list__title">Contact</li>
+            <li class="info-list__item">P: (03) 9283 4726</li>
+            <li class="info-list__item">
+              E:
+              <a href="mailto:enquiries@mill.co" class="info-list__link"
+                >enquiries@mill.co</a
+              >
+            </li>
+          </ul>
+          <ul class="info-list info-list--hours">
+            <li class="info-list__title">Opening Hours</li>
+            <li class="info-list__item">Wed — Sat, 12-3pm | 6pm-late</li>
+            <li class="info-list__item">Sun, 12 noon til 3pm</li>
+            <li class="info-list__item">Mon — Tues, closed</li>
+          </ul>
+          <ul class="info-list info-list--social">
+            <li class="info-list__title">Social</li>
+            <ul class="social__list">
+              <li class="info-list__item">
+                <i class="fa-brands fa-instagram"></i>
+              </li>
+              <li class="info-list__item">
+                <i class="fa-brands fa-facebook-f"></i>
+              </li>
+              <li class="info-list__item">
+                <i class="fa-solid fa-plane-arrival"></i>
+              </li>
+              <li class="info-list__item">
+                <i class="fa-solid fa-pizza-slice"></i>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
